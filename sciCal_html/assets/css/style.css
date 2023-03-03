@@ -7,7 +7,14 @@
     --purple : #cc71ee;
     --white : white;
 }
-
+.container-fluid{
+    /* background:url(../images/bg3.jpg); */
+    /* background:linear-gradient(to right,#6E48AA,#9D50BB); */
+    background: linear-gradient(to right,#B993D6,#8CA6DB);
+    /* background: linear-gradient(to right,#3a7bd5,#00d2ff); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #mainRow{
     display: flex;
     justify-content: center;
@@ -16,29 +23,37 @@
 
 }
 #calRow{
-background-color: rgb(15, 187, 245);
+background-color: rgba(255, 255, 255,0.2);
 height: auto;
-padding: 5px;
-border-radius: 15px;
+border-radius: 10px;
+/* border: 1px solid white; */
+/* box-shadow: 1px 1px white; */
+
 }
 #calCol1{
-    background-color: rgb(105, 105, 104);
-    height: 100px;
+    /* background-color: rgb(105, 105, 104); */
+    height: 150px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
 #calCol2{
+    cursor: pointer;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-background-color: rgb(145, 145, 229);
-height: 300px;
 padding: 0;
 }
-.table-bordered{
-    margin: 0;
-    /* padding: 10px; */
+table {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    border-collapse: separate;
+
+    /* border-spacing: 3px 3px; */
 }
-tbody tr{
-    text-indent: 10px;
-    gap: 10;
+tr{
+    
+     box-sizing: border-box;
+    background-color: rgba(255, 255, 255,0.1);
+    height: 50px;
 }
