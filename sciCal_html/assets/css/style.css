@@ -9,12 +9,7 @@
 }
 
 .container-fluid{
-    /* background:url(../images/bg3.jpg); */
-    /* background:linear-gradient(to right,#6E48AA,#9D50BB); */
-    background: linear-gradient(to right,var(--purple),var(--blue));
-    /* background: linear-gradient(to right,#3a7bd5,#00d2ff); */
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to right,var(--blue),var(--purple));
 }
 #mainRow{
     display: flex;

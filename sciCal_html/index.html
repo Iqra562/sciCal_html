@@ -20,12 +20,13 @@
           <div class="row" id="calRow">
             <div class="col-md-12 " id="calCol1">
               <div class="clearfix"><img src="./assets/images/timer.png" alt="" width="30px"
-                style="float: right;margin-top: 1%;cursor: pointer;"> </div>
-                <div style="height: 70px;"></div>
- <input type="text" id="inp">
+                  style="float: right;margin-top: 1%;cursor: pointer;"> </div>
+
+              <div style="height: 70px;"></div>
+              <input type="text" id="inp">
             </div>
             <div class="col-md-12" id="calCol2">
-              <table class="">
+              <table id="t">
 
                 <tbody>
                   <tr>
@@ -42,61 +43,61 @@
                     <td class="tdd">cos<sup>-1</sup> </td>
                     <td class="tdd">tan<sup>-1</sup> </td>
 
-                   
-                  </tr>
-                  <tr>
-                   <td class="tdd">a<sup>2</sup></td>
-                   <td class="tdd">a<sup>b</sup> </td>
-                   <td class="tdd">|a|</td>
-                   <td class="tdd">&Sqrt;</td>
 
-                   <td class="tdd"> <sup>n</sup> &Sqrt;</td>
-                   
                   </tr>
                   <tr>
-                    <td class="tdd">(</td>
-                    <td class="tdd">)</td>
+                    <td class="tdd">a<sup>2</sup></td>
+                    <td class="tdd">a<sup>b</sup> </td>
+                    <td class="tdd">|a|</td>
+                    <td class="tdd">&Sqrt;</td>
+
+                    <td class="tdd"> <sup>n</sup> &Sqrt;</td>
+
+                  </tr>
+                  <tr>
+                    <td class="tdd num">(</td>
+                    <td class="tdd num">)</td>
                     <td class="tdd">%</td>
                     <td class="tdd">&#8495;</td>
-                   <td class="tdd">&#8448;</td>
+                    <td class="tdd">&#8448;</td>
 
-                    
+
                   </tr>
                   <tr>
 
-                    <td class="tdd">1</td>
-                    <td class="tdd">2</td>
-                    <td class="tdd">3</td>
+                    <td class="tdd num">1</td>
+                    <td class="tdd num">2</td>
+                    <td class="tdd num">3</td>
                     <td class="tdd"> &#247;</td>
                     <td class="tdd">In</td>
 
                   </tr>
                   <tr>
-                    <td class="tdd">4</td>
-                    <td class="tdd">5</td>
-                    <td class="tdd">6</td>
+                    <td class="tdd num">4</td>
+                    <td class="tdd num">5</td>
+                    <td class="tdd num">6</td>
                     <td class="tdd">&#215;</td>
                     <td class="tdd">log</td>
 
-                    
+
                   </tr>
                   <tr>
 
-                    <td class="tdd">7</td>
-                    <td class="tdd">8</td>
-                    <td class="tdd">9</td>
+                    <td class="tdd num">7</td>
+                    <td class="tdd num">8</td>
+                    <td class="tdd num">9</td>
                     <td class="tdd">+</td>
                     <td class="tdd">rnd()</td>
 
                   </tr>
                   <tr>
 
-                    <td class="tdd">0</td>
-                    <td class="tdd">&middot;</td>
+                    <td class="tdd num">0</td>
+                    <td class="tdd num">&middot;</td>
                     <td class="tdd">=</td>
                     <td class="tdd">-</td>
                     <td class="tdd">&pi;</td>
-                   
+
                   </tr>
                 </tbody>
               </table>
@@ -110,6 +111,13 @@
     </div>
 
   </div>
+  <script>
+   let num = document.querySelector(".num");
+   num.addEventListener("click" , ()=>{
+   text =  document.querySelector(".num").textContent;
+    document.getElementById("inp").value +=text
+   })
+  </script>
 </body>
 
 </html>
