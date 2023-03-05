@@ -9,7 +9,8 @@
 }
 
 .container-fluid{
-    background: linear-gradient(to right,var(--blue),var(--purple));
+    /* background: linear-gradient(to right,var(--blue),var(--purple)); */
+
 }
 #mainRow{
     display: flex;
@@ -19,9 +20,10 @@
 
 }
 #calRow{
-background-color: rgba(255, 255, 255,0.2);
+/* background-color: rgba(255, 255, 255,0.2); */
 height: auto;
 border-radius: 10px;
+background-color:rgb(104, 188, 216);
 
 }
 #calCol1{
@@ -49,7 +51,7 @@ table {
 tr{
      box-sizing: border-box;
      text-align: center;
-    background-color: rgba(255, 255, 255,0.1);
+    background-color: rgba(255, 255, 255,0.2);
     height: 60px;
 }
 .tdd{
